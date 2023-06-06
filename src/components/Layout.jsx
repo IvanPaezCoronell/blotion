@@ -1,12 +1,15 @@
+import { CartProvider } from '../context/cart';
 import Footer from './Footer';
 import Navbar from './Navbar';
 
 export default function RootLayout({ children }) {
 	return (
 		<div>
-			<Navbar />
-			{children}
-			<Footer />
+			<CartProvider>
+				<Navbar />
+				{children}
+				<Footer />
+			</CartProvider>
 		</div>
 	);
 }
