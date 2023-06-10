@@ -14,15 +14,18 @@ const ProductsPage = () => {
 
 	const filteredProducts = filterProducts(products);
 	return (
-		<CartProvider>
-			<Navbar />
-			<main className="flex min-h-screen flex-col items-center justify-between p-5 bg-white">
-				<Cart />
-				<Filters />
-				<AllProducts products={filteredProducts} />
-			</main>
-			<Footer />
-		</CartProvider>
+		<>
+		<Navbar />
+		<main className="flex min-h-screen flex-col items-center justify-between p-5 bg-white">
+			<Cart />
+			<Filters />
+			<AllProducts products={filteredProducts} />
+		</main>
+		<Footer />
+		
+		</>
+		
+		
 	);
 };
 
