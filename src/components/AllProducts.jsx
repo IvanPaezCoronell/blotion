@@ -1,9 +1,10 @@
 import { TiShoppingCart } from 'react-icons/ti';
 import { AiFillStar } from 'react-icons/ai';
 import { MdRemoveShoppingCart } from 'react-icons/md';
-import { useCart } from '../hooks/useCart';
+import { useCart } from '../hooks/useCart'
 
-export function Products({ products }) {
+
+export function AllProducts({ products }) {
 	const { addToCart, removeFromCart, cart } = useCart();
 
 	const checkProductInCart = product => {
@@ -19,7 +20,7 @@ export function Products({ products }) {
 					</h2>
 				</div>
 				<div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4 rounded-lg ">
-					{products.slice(0, 12).map(product => {
+					{products.map(product => {
 						const isProductInCart = checkProductInCart(product);
 
 						return (
