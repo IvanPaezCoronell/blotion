@@ -18,7 +18,7 @@ const ProductsPage = () => {
 		<Navbar />
 		<main className="flex min-h-screen flex-col items-center justify-between p-5 bg-white">
 			<Cart />
-			<Filters />
+			{/* <Filters /> */}
 			<AllProducts products={filteredProducts} />
 		</main>
 		<Footer />
