@@ -7,25 +7,25 @@ import { AllProducts } from '../../components/AllProducts';
 import { useState } from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import { FiltersProvider } from '../../context/filters';
 
 const ProductsPage = () => {
 	const [products] = useState(initialProducts);
-	const { filterProducts } = useFilters();
+	const {filters, filterProducts } = useFilters();
 
 	const filteredProducts = filterProducts(products);
 	return (
-		<>
-		<Navbar />
-		<main className="flex min-h-screen flex-col items-center justify-between p-5 bg-white">
-			<Cart />
-			{/* <Filters /> */}
-			<AllProducts products={filteredProducts} />
-		</main>
-		<Footer />
-		
-		</>
-		
-		
+		<FiltersProvider>
+			<CartProvider>
+				<Navbar />
+				<main className="flex min-h-screen flex-col items-center justify-between p-5 bg-white">
+					<Cart />
+					{/* <Filters /> */}
+					<AllProducts products={filteredProducts} />
+				</main>
+				<Footer />
+			</CartProvider>
+		</FiltersProvider>
 	);
 };
 
