@@ -48,7 +48,7 @@ const Navbar = () => {
 												<a
 													key={name}
 													href={link}
-													onClick={() => navigate('/products')}
+													
 													className="rounded-sm text-sm font-medium flex items-center p-3 -mb-1  text-white hover:bg-blue-400  hover:text-white"
 												>
 													{name}
