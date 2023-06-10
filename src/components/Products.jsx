@@ -11,7 +11,7 @@ export function Products({ products }) {
 	};
 
 	return (
-		<section className="py-6 sm:py-12 bg-white-500 text-gray-100">
+		<section className="py-6 sm:py-12 bg-white-500 text-gray-100" id='products-id'>
 			<div className="container p-6 mx-1 space-y-8">
 				<div className="space-y-2 text-center">
 					<h2 className="text-3xl text-gray-900 font-bold">

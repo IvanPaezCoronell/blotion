@@ -6,10 +6,10 @@ const Navbar = () => {
 	const navigate = useNavigate();
 
 	const navLink = [
-		{
-			name: 'Productos',
-			link: '/products',
-		},
+		// {
+		// 	name: 'Productos',
+		// 	link: '/products',
+		// },
 		{
 			name: 'Mis Compras',
 			link: '/shopping',

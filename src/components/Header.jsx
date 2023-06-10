@@ -17,7 +17,7 @@ export default function Header() {
 									<div className="w-auto p-2">
 										<a
 											className="inline-block px-5 py-4 text-white font-semibold tracking-tight bg-indigo-500 hover:bg-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-400 transition duration-200"
-											href="/products"
+											href="#"
 										>
 											Explorar Productos
 										</a>
