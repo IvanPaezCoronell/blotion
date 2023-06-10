@@ -16,7 +16,7 @@ export function AllProducts({ products }) {
 			<div className="container p-6 mx-1 space-y-8">
 				<div className="space-y-2 text-center">
 					<h2 className="text-3xl text-gray-900 font-bold">
-						Productos Recomendados
+						Productos Disponibles
 					</h2>
 				</div>
 				<div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4 rounded-lg ">
