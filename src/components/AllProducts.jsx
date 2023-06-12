@@ -56,7 +56,9 @@ export function AllProducts({ products }) {
 											<strong>
 												${product.price}
 											</strong>
+											<p className="text-sm line-through text-red-400">{product.discountPercentage}%</p>
 										</span>
+										
 										<span>
 											<button
 												style={{
