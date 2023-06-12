@@ -911,7 +911,7 @@ export default function Index() {
 						<span className="font-bold text-lg">Blotion</span>
 					</div>
 					<a
-						href="#"
+						href="/products"
 						rel="noreferrer noopener"
 						className="px-5 mt-4 lg:mt-0 py-3 rounded-md border block dark:bg-gray-50 dark:text-gray-900 dark:border-gray-400"
 					>
