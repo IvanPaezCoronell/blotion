@@ -19,7 +19,7 @@ export function Products({ products }) {
 					</h2>
 				</div>
 				<div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4 rounded-lg ">
-					{products.slice(0, 12).map(product => {
+					{products.slice(0, 8).map(product => {
 						const isProductInCart = checkProductInCart(product);
 
 						return (

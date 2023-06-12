@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import Filters from './components/Filters';
-import RootLayout from './components/Layout';
+// import Filters from './components/Filters';
 import { Products } from './components/Products';
 import Cart from './components/cart/Cart';
 import { CartProvider } from './context/cart';
@@ -9,7 +8,6 @@ import { products as initialProducts } from './mocks/products.json';
 import Header from './components/Header';
 import Carrousel from './components/Carrousel'
 import Faq from './components/Faq';
-import { AllProducts } from './components/AllProducts';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -28,8 +26,8 @@ function App() {
 					<Header/>
 					<Cart />
 					<Carrousel />
-					<Filters />
-					<AllProducts products={filteredProducts} />
+					{/* <Filters /> */}
+					<Products products={filteredProducts} />
 					<Faq />
 					</main>
 					<Footer />
