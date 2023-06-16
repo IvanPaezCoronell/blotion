@@ -1,21 +1,23 @@
-
-import { useNavigate } from 'react-router-dom';
-import './shoppingStyle.css';
-import { BiArrowBack } from 'react-icons/bi';
+import Cart from '../../components/shopping/Cart';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import EmptyCart from '../../components/shopping/emptyCart/EmptyCart';
+import { useId } from 'react';
+import { useCart } from '../../hooks/useCart';
 
 const ShoppingPage = () => {
-	const navigate = useNavigate();
+	const { cart } = useCart();
+
 	return (
-		<div className="container-sho">
-			<div className="demo">
-				<div className="circle">
-					<div className="inner" />
-				</div>
-			</div>
-			<h2>En desarrollo, muy pronto...</h2>
-			<p>Aqui podras ver el estado de tu carrito</p>
-			<button onClick={() => navigate('/')} className="text-white gap-2 mt-3 inline-flex items-center px-5 py-4 bg-blue-500 hover:bg-indigo-600 hover:text-white  rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200 "><i><BiArrowBack/> </i>  Go Home</button>
-			
+		<div>
+			<Navbar />
+			{/* <Cart /> */}
+			{/* <EmptyCart /> */}
+			{cart.length === 0 ? <EmptyCart /> : <Cart />}
+			{/* {(cart === ) ? <EmptyCart /> : <Cart /> } */}
+			{/* {(cart === 0) ? <Cart /> : <EmptyCart /> } */}
+
+			<Footer />
 		</div>
 	);
 };
